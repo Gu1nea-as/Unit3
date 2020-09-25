@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adrian Sapien">
+    <meta name="description" content="Order a pizza through our wesbite!">
+    <link rel="icon" href="" type="image">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:title" content="">
+
+    <title>Pizza Order Form</title>
+
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>User Information</legend>
+            <ul style="list-style-type: none">
+            <li><label for="user">Username</label>
+                <input type="text" id="user" name="user.name"></li>
+            <li><label for="pass">Password</label>
+                <input type="password" id="pass" name="user.pass"></li>
+            </ul>
+        </fieldset>
+    
+
+
+        
+        <fieldset>
+            <legend>What drink do you want?</legend>
+            <ul style="list-style-type: none;">
+            <label for="drink.Coke"></label>
+            <li><input type="radio" id="drink.Coke" name="user.drink" >Coke</li>
+            <label for="drink.Diet"></label>
+            <li><input type="radio" id="drink.Diet" name="user.drink" >Diet Coke</li>
+            <label for="drink.Sprite"></label>
+            <li><input type="radio" id="drink.Sprite" name="user.drink" >Sprite</li>
+            <label for="drink.Water"></label>
+            <li><input type="radio" id="drink.Water" name="user.drink" >Water</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pizza Preference</legend>
+            <ul style="list-style-type: none;">
+            <label for="plain"></label>
+            <li><input type="checkbox" id="plain" name="user.top">Plain</li>
+            <label for="pepperoni"></label>
+            <li><input type="checkbox" id="pepperoni" name="user.top">Pepperoni</li>
+            <label for="Chicken"></label>
+            <li><input type="checkbox" id="Chicken" name="user.top">Chicken</li>
+            <label for="sausage"></label>
+            <li><input type="checkbox" id="sausage" name="user.top">Sausage</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Instructions</legend>
+            <ul style="list-style-type: none;">
+            <li><label for="instructions">Special Instructions</label></li>
+            <textarea id="instructions" name="user.instructions" cols=30 rows=10></textarea>
+            </ul>
+            <button type="submit">Submit</button>
+        </fieldset>
+
+</form>
+</body>
+</html>

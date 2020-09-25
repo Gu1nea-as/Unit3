@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><code>var <var>para</var> = document.querySelector('p'); <br>
+    <var>para</var>.onclick = function() { 
+       alert('Owww, stop poking me!');
+    }<br></code></pre>
+    You shouldn't use presentational elements like &lt;font&gt; and &lt;center&gt;.<br>
+    In the above JavaScript example, <var>para</var> represents a paragraph element.<br>
+    Select all the text with <kbd>Ctrl/Cmd + A.</kbd> <br>
+    <samp>$ ping mozilla.org <br>
+    PING mozilla.org (63.245.215.20): 56 data bytes 64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
+
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>User Questionare</legend>
+            <ul style="list-style-type: none">
+                <li><label for="DoB">Date of Birth mm/dd/yyyy</label>
+                <input type="text" id="DoB" name="user.DoB"></li>
+
+                <li><label for="comments">Please write a comment about your stay.</label></li>
+                <li><textarea name="user.comments" id="comments" cols="30" rows="10"></textarea></li>
+            
+                <li><button type="submit">Submit your Questionare</button></li>
+                <li><button type="reset" value="Reset your input" disabled >Reset</li>
+                <li><input type="text" value="No thank you" readonly></li>
+                <li><label for="myfile">Select an Image</label>
+                    <input type="file" id="myfile" name="myfile" accept="image/jpeg"</li>
+                <li><label for="pizza">Select your pizza toppings</label>
+                <input type="checkbox" id="pizza" name="user.toppings">Pepperoni
+                <input type="checkbox" id="pizza" name="user.toppings">Olives
+                <input type="checkbox" id="pizza" name="user.toppings">Mushrooms
+                <input type="checkbox" id="pizza" name="user.toppings">Sausage</li>
+                <li><label for="password">Password:</label>
+                <input type="password" id="password" name="user.password"></li>
+                <li><label for="soda">Choose your favorite soda</label>
+                <input type="radio" id="soda" name="user.soda">Coca-Cola
+                <input type="radio" id="soda" name="user.soda">Fanta
+                <input type="radio" id="soda" name="user.soda">Sprite
+                <input type="radio" id="soda" name="user.soda">Pepsi</li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
